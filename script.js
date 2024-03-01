@@ -24,10 +24,10 @@ console.log(apiURL);
         .then(function(tvData) {
             var picURL = tvData[0].show.image.medium;
             var tvInfo = tvData[0].show.summary;
-            resultsTV.insertAdjacentHTML("afterbegin", 
+            resultsTV.insertAdjacentHTML("afterend", 
               
             `<img src= ${picURL} />
-              <h1>${tvInfo}</h1>
+              <p>${tvInfo}</p>
               
               
               
